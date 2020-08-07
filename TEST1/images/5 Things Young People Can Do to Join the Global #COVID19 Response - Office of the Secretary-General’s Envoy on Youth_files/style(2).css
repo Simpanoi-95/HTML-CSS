@@ -1,0 +1,307 @@
+/*
+Theme Name: Youth Envoy - Modified Avada Child
+Description: Child theme of Avada theme
+Author: ThemeFusion core, modified by dfx
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  EOY-Avada
+*//* =Theme customization starts here
+------------------------------------------------------- */
+/* Eric begin */
+/**//* welcome UN icon  and brandbar fixes*/
+#wrapper .fusion-secondary-header .fusion-contact-info:before {
+    font-family: FontAwesome;
+    color: black;
+    content: "\f015";
+    font-size: 18.07px;
+    /*line-height: 0.9;*/
+    margin-right: 7.8px;
+    float: left;
+    -webkit-font-smoothing: antialiased;}
+  #wrapper .fusion-secondary-header .fusion-contact-info {display:inline-block;}
+  #wrapper .fusion-secondary-header {border-bottom: 5px solid #00adef;}
+  #wrapper .fusion-secondary-header a {color: #000;}
+
+  /**//* langbar fixes */
+  #wrapper .fusion-secondary-header .menu li {padding: 0 5px !important; border-left: none !important;margin:0;}
+  #wrapper .fusion-secondary-header .current-menu-item a {font-weight:bold;}
+  .fusion-secondary-menu > ul > li > a {padding:0 !important;}
+
+  /**//* header fixes */
+  .fusion-header-banner {font-family: Roboto,Arial,Helvetica,sans-serif;
+  font-size:16px; color:#4d4d4d; text-align:right;}
+  .fusion-header {border-bottom:none !important}
+
+  .page-child #content {margin-top:20px;}
+/*fixes or adjusts search bar placement*/
+  .fusion-logo-left.fusion-header-v4 .fusion-logo {width:100%;}
+
+  /**//* footer fixes */
+  .fusion-footer-copyright-area {
+      background-color: #ffffff;
+  }
+  .fusion-copyright-notice .un-footer a {color:#000000;}
+
+  /**//* nav & sticky header */
+  .fusion-secondary-main-menu ul li,
+  .fusion-main-menu ul li {text-transform:uppercase;}
+  .fusion-secondary-main-menu ul li ul li,
+  .fusion-main-menu ul li ul li {text-transform:none;}
+  .fusion-secondary-main-menu  {
+      background-color:#4d4d4d !important;
+      border: 0 !important;
+  }
+
+  .fusion-megamenu-icon {float:right; }
+
+  /**//* page title bar */
+  .fusion-page-title-bar {border-top:0;}
+  .fusion-page-title-wrapper {margin-top:10px;padding-bottom:15px;}
+  /**//* Titles blue underline */
+  .fusion-title.sep-underline {border-bottom: 3px solid #00adef!important;}
+
+  /**//* posts blue line separator */
+  .fusion-post-content .fusion-content-sep  {
+      border-top: 3px solid #00adef !important;
+      border-bottom:none;}
+
+/*special PDF LInk*/
+
+a[href$=".pdf"]:after {
+    font-family: FontAwesome;
+    color: red;
+    content: "\f1c1";
+    font-size: 13px !important;
+    /*line-height: 0.9;*/
+    padding-left: 3px;
+    -webkit-font-smoothing: antialiased;
+    display: inline;
+}
+
+a.fusion-button[href$=".pdf"]:after {
+    color: #fff;
+}
+
+a[href$=".zip"]:after {
+    font-family: FontAwesome;
+    color: #f2f2f2;
+    content: "\f1c6";
+    font-size: 11px !important;
+    /*line-height: 0.9;*/
+    padding-left: 3px;
+    padding-bottom: 3px;
+    text-rendering: auto;
+    display: inline;}
+    
+    
+    .home .fusion-title.sep-underline{
+    border-bottom: 3px solid #00adef !important;
+    padding-bottom:0px!important;}
+    
+    .home .title h3 {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-bottom: 5px!important;
+    padding-left:5px!important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #4d4d4d;
+    padding-top: 5px !important;
+    font-size: 18.5px !important;
+}
+
+
+
+
+
+
+/*home page */
+.slide-content {
+    opacity: 0;
+    margin-right: auto;
+    width: auto;
+    margin-top: 23%!important;max-width:975px;margin-left:3%!important;
+}
+/*prefooter*/
+
+#prefooter p {color:#fff!important; }
+#prefooter a{color:#fff;}
+#prefooter a:hover{color:#fff; text-decoration:underline;}
+#prefooter h3, #prefooter h4 {color:#fff;}
+#prefooter div.fusion-widget-area-1{padding-right:25px;}
+#prefooter div.fusion-widget-area-2, #prefooter .fusion-widget-area-3 {text-align:center;}
+#prefooter div.fusion-widget-area-2 p {padding:5px 25px;}
+#prefooter div.fusion-widget-area-2 input{width:80%;}
+#prefooter div.fusion-widget-area-2 input.comment-submit {padding:13px;margin-left:0px;line-height:6px!important;}
+
+  /**//* Tabs element force white font on active */
+  .fusion-tabs .nav-tabs > li.active .fusion-tab-heading {color:#ffffff;}
+  #wrapper .fusion-tabs.fusion-tabs-1.clean .nav-tabs li a:hover h4 {color:#ffffff !important;}
+
+  /**//* Avada popular/recent tabs widget */
+  #wrapper .fusion-tabs-widget .tab-holder .tabs li a {font-size:16px !important;}
+
+  /**//* images Rollover screen in carousel */
+  .fusion-carousel .fusion-image-wrapper .fusion-rollover .fusion-rollover-content .fusion-rollover-title {
+      font-size:12px !important; line-height:.85 !important;}
+
+
+
+
+
+
+
+
+
+  /**//* homepage social icons */
+  body.home .fusion-social-links .fusion-social-networks a {font-size: 48px !important;}
+
+  /**//* photo captions */
+  .wp-caption-text {background-color: #f2f2f2;padding: 5px;}
+
+  /**//* icons for links */
+  a.download:before { content: "\f019";
+    font-family: FontAwesome; color: #00adef;
+    display: inline-block; width: 1.4em;
+    margin-left: -1.2em; -webkit-font-smoothing: antialiased;}
+  a.download {padding-left: 1.2em;}
+  #wrapper a.link:before { content: "\f0c1";
+    font-family: FontAwesome; color: #00adef;
+    display: inline-block; width: 1.4em;
+    margin-left: -1.2em; -webkit-font-smoothing: antialiased;}
+  #wrapper a.link{padding-left: 1.2em;}
+  #wrapper a.job:before { content: "\f0b1";
+    font-family: FontAwesome; color: #00adef;
+    display: inline-block; width: 1.4em;
+    margin-left: -1.2em; -webkit-font-smoothing: antialiased;}
+  #wrapper a.job{padding-left: 1.2em;}
+
+  /**//* video containers */
+  .video-container .fusion-column-content {text-align:center;}
+
+  /*temp notice*/
+  #notice {color:red; text-align:center;font-size:13px;line-height:1.25;}
+  /**//* SIDEBAR */
+  #sidebar .heading h4, h3.title, h3.title {
+      text-transform:uppercase;
+      border-bottom: #00adef solid 3px;
+      padding-bottom: 7px;
+      margin-bottom: 20px;font-size:16px;font-weight:bold!important;
+  }
+
+  /**//* Categories widget */
+  .ve-cat-widget-div ul.ve-cat-widget-listing li span.post-count {
+      position: absolute;
+      height: 34px;
+      min-width: 29px;
+      text-align: right;
+      background: #fff;
+      right: 0;
+      color: #605f5f;
+      padding: 8px 5px;
+      line-height: 20px;
+      border-radius: 5px;
+      box-shadow: none !important;
+      top: -9px;
+  }
+
+
+
+
+  /**//* subpages widget */
+  #sidebar .widget_subpages ul ul {padding-left:20px !important;}
+  #sidebar .widget_subpages ul {padding-left:0 !important;}
+  #sidebar .widget_subpages li {
+      padding: 8px 0;
+      margin-bottom:8px;
+      border-bottom: #F2F2F2 1px solid;}
+  #sidebar .widget_subpages li li {
+      border-bottom: none;
+      padding:4px;
+      margin-bottom:4px;}
+  #sidebar .widget_subpages li.widget_subpages_current_page a:first-of-type {font-weight:bold;}
+  #sidebar .widget_subpages li.widget_subpages_current_page a:first-of-type:before { content: "\f054";
+    font-family: FontAwesome;
+    display: inline-block; width: 1.4em;
+    margin-left: -1.2em; -webkit-font-smoothing: antialiased;}
+  #sidebar .widget_subpages li.widget_subpages_current_page a {padding-left: 1em;}
+
+  /**//* footer */
+  .fussion-footer {border-top-width:3px;}
+  #rss-2 li {margin-bottom:12px;}
+
+
+  h2.title-heading-left {font-size:24px!important;}
+
+  /*header search box*/
+  .fusion-search-button input.fusion-search-submit.searchsubmit { background:#00adef!important;}
+  /*drop down menu 3rd tier*/
+  .fusion-main-menu .sub-menu ul ul.sub-menu {
+      top: -5px;
+      left: 200px!important;border-left:1px solid #4d4d4d;width:200px!important;}
+
+
+  /* Eric end */
+  #main .fusion-row {
+    /*max-width: fusion-title title1100px !important;*/
+  }
+  .fusion-logo img {
+     /* width: 102px !important;  TEMPORARY FIX until we get real logo*/
+     width:500px!important;float:left;
+  }
+  .fusion-logo {
+      float: left !important;
+  }
+  .fusion-logo .fusion-logo-link {
+      display: block;
+      float: left;
+      width: auto;
+  }
+  .fusion-logo .navbar-brand {
+      margin-left: 20px;
+      display: block;
+      float: left;
+      padding: 0;
+  }
+  .fusion-logo a {
+      color: #58585A;
+      display: block;
+      width: 400px;
+      font-family: Roboto;
+      font-size: 14px;
+  }
+  .fusion-logo a .line-1 {
+      display: block;
+  }
+  .fusion-logo a .line-2 {
+      display: block;
+      font-size: 33px;
+      line-height: 33px;
+      font-weight: bold;
+  }
+  .fusion-header-v4 .fusion-header {
+      padding-top: 0!important;
+      padding-bottom: 0!important;
+  }
+  /* Fix top padding */
+
+  #main {
+      padding-top: 25px !important;
+  }
+
+
+
+  /* * TABLETS / MOBILE * */
+  @media only screen and (max-width: 800px) {
+      .fusion-secondary-header .fusion-mobile-nav-holder {display: none !important;}
+      .fusion-secondary-menu {display: block !important;}
+      .fusion-alignleft {text-align:center;margin: 4px 0 0 0 !important;}
+      .fusion-alignleft a {line-height:20px !important;}
+      .fusion-secondary-menu {text-align:center;line-height:24px !important;}
+      .fusion-secondary-menu ul {display:inline-block;}
+      .fusion-secondary-menu .menu-item {line-height:24px !important;height:24px !important;}
+      .fusion-header-banner {text-align:center !important;font-size:13px;padding-top:0;}
+      body.page:not(.home) .fusion-flexslider {float: none; width: 100%; margin-bottom: 10px;}
+  }
